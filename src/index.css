@@ -1,0 +1,12 @@
+:root{
+    --background_color_one: #ededed;
+    --background_color_two: #000;
+    --headings_colors: #01ACC4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ZCOOL QingKe HuangYou', sans-serif;
+}
