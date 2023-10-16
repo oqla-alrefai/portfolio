@@ -1,4 +1,4 @@
-import "./Home.css";
+import "./home.css";
 import main_photo from "../../assets/home_photo.jpg";
 import Header from "./Header/Header.jsx";
 import Main from "./MainContent/Main.jsx";
