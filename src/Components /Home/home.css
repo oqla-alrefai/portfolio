@@ -42,13 +42,13 @@
 }
 
 @media (max-width: 430px) {
- .home_view_container{
-    height: 110vh;
- }   
+    .home_view_container {
+        height: 110vh;
+    }
 }
 
 @media (max-width: 380px) {
-    .home_view_container{
-       height: 130vh;
-    }   
-   }
+    .home_view_container {
+        height: 130vh;
+    }
+}

@@ -18,7 +18,7 @@ import jira from "../../assets/jira-rb.png";
 function AboutUs() {
   let technologies = [
     {
-      category: "Front-End Technologies",
+      category: "Front-End",
       className: "front_end_section",
       images: [
         {
@@ -52,7 +52,7 @@ function AboutUs() {
       ],
     },
     {
-      category: "Back-End Technologies",
+      category: "Back-End",
       className: "back_end_section",
       images: [
         {
@@ -96,7 +96,7 @@ function AboutUs() {
         <div className="technologies_content">
           {technologies.map((element) => {
             return (
-              <div className={element.className}>
+              <div className={`${element.className} all_images_categories`}>
                 <h3>{element.category}</h3>
                 <div className="images_category">
                   {element.images.map((ele) => {
