@@ -31,7 +31,8 @@
 }
 
 .home_text_area p {
-    opacity: 0.7;
+    color: var(--background_color_two);
+    opacity: 0.9;
     text-align: start;
     line-height: 1.2em;
     margin: 0 0 1.5em 0;
@@ -45,7 +46,6 @@
     letter-spacing: 0.09em;
     text-align: center;
     cursor: pointer;
-    color: var(--background_color_one);
     background-color: var(--headings_colors);
     border: none;
     padding: 0.6em;
@@ -57,6 +57,16 @@
 .home_text_area button:hover {
     transform: translateY(-2px);
     background-color: var(--background_color_two);
+    color: var(--headings_colors);
+}
+
+.home_text_area button a {
+    text-decoration: none;
+    color: var(--background_color_one);
+    transition: 0.5s;
+}
+
+.home_text_area button:hover a {
     color: var(--headings_colors);
 }
 

@@ -34,7 +34,7 @@ function Main() {
           with educational support, creating an environment of continuous
           learning and growth.
         </p>
-        <button>Technologies</button>
+        <button><a href="#technologies_view">Technologies</a></button>
       </section>
     </>
   );
