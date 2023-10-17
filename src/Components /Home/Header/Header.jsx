@@ -9,10 +9,12 @@ function Header() {
     {
       category: "Home",
       icon: <i className="ri-home-2-line"></i>,
+      destination: "home_view",
     },
     {
-      category: "About",
-      icon: <i className="ri-user-3-line"></i>,
+      category: "Technologies",
+      icon: <i class="ri-computer-line"></i>,
+      destination: "technologies_view",
     },
     {
       category: "Services",
@@ -52,7 +54,7 @@ function Header() {
             {iconsArray.map((element, index) => {
               return (
                 <li key={index}>
-                  <a href="#">
+                  <a href={`#${element.destination}`}>
                     <span className="header_navbar_icons">{element.icon}</span>
                     <span className="header_navbar_text">
                       {element.category}

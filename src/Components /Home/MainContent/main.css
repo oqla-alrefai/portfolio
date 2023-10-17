@@ -1,6 +1,6 @@
 .home_text_area {
     width: 90%;
-    height: 300px;
+    height: 400px;
     display: flex;
     justify-content: start;
     align-items: start;
@@ -38,7 +38,7 @@
 }
 
 .home_text_area button {
-    width: 100px;
+    width: 110px;
     height: 35px;
     font-size: 1em;
     word-spacing: 0.2em;
@@ -60,14 +60,39 @@
     color: var(--headings_colors);
 }
 
-@media (max-width: 393px) {
+@media (max-width: 912px) {
     .home_text_area {
-        margin-top: -5em;
+        height: 550px;
     }
 }
 
-@media (max-width: 290px) {
+@media (max-width: 820px) {
     .home_text_area {
-        margin-top: -10em;
+        height: 500px;
+    }
+}
+
+@media (max-width: 580px) {
+    .home_text_area {
+        height: 550px;
+    }
+}
+
+@media (max-width: 500px) {
+    .home_text_area {
+        width: 100%;
+        height: 600px;
+    }
+}
+
+@media (max-width: 430px) {
+    .home_text_area {
+        height: 800px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home_text_area {
+        height: 750px;
     }
 }

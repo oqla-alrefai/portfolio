@@ -10,7 +10,7 @@ function DropdownMenu(props) {
             className={`sidebar_list_ showSidebar${props.showMenuItems}`}
             style={{ "--i": index + 1 }}
           >
-            <a href="#">
+            <a href={`#${element.destination}`}>
               <span className="header_navbar_text">{element.category}</span>
               <span className="header_navbar_icons">{element.icon}</span>
             </a>

@@ -11,15 +11,30 @@ function Main() {
         <span className="job_title">I'm a Front End Web Developer </span>
 
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-          corrupti tenetur sed quasi odio ducimus deleniti veritatis dolorem
-          culpa saepe eveniet accusamus voluptas aut, nulla maiores repudiandae
-          natus ullam unde! Lorem ipsum dolor sit amet consectetur, adipisicing
-          elit. Ratione accusantium nemo aut nulla voluptatem possimus, culpa
-          sapiente quasi doloribus optio est modi debitis cupiditate voluptate
-          facere facilis maxime magnam ex.
+          I am a dedicated front-end web developer with a solid foundation in
+          biomedical informatics engineering, holding a bachelor's degree in the
+          field. Following my graduation, I undertook a transformative journey
+          by enrolling in an intensive six-month web development course at the
+          ASAC department in Luminous Technical University College. The course
+          covered a comprehensive range of front-end technologies, including
+          JavaScript, HTML, CSS, React.js, Redux, and various tools and
+          libraries such as Bootstrap and MUI. Exploring the back-end, I gained
+          proficiency in Node.js, RESTful APIs, SQL, and noSQL databases.
+          Alongside technical skills, I refined my collaboration abilities by
+          navigating Git and GitHub.
+          <br />
+          <br />
+          After completing the course, I assumed the role of a full-stack
+          developer and a teacher assistant at ASAC. Over the course of two
+          rewarding years, I actively contributed to diverse projects utilizing
+          GitHub Projects and Jira for efficient project management.
+          Simultaneously, I took on the role of a mentor, guiding students
+          through the same web development course I had successfully completed.
+          This dual role allowed me to seamlessly blend practical experience
+          with educational support, creating an environment of continuous
+          learning and growth.
         </p>
-        <button>About Me</button>
+        <button>Technologies</button>
       </section>
     </>
   );
