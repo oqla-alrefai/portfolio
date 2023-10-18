@@ -8,7 +8,11 @@ function Home() {
   return (
     <>
       <section className="home_view_container" id="home_view">
-        <img src={main_photo} alt="my personal image" />
+        <img
+          src={main_photo}
+          alt="my personal image"
+          className="left_side_image"
+        />
         <section className="home_content">
           <Header />
           <Main />

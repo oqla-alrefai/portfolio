@@ -42,3 +42,9 @@
 .home_footer a:hover:after {
     left: 100%;
 }
+
+@media (max-width: 480px) {
+    .home_footer a {
+        font-size: 1.2em;
+    }
+}

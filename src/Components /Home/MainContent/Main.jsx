@@ -9,7 +9,6 @@ function Main() {
         </span>
         <h1>Khaled Zayed Tahat</h1>
         <span className="job_title">I'm a Front End Web Developer </span>
-
         <p>
           I am a dedicated front-end web developer with a solid foundation in
           biomedical informatics engineering, holding a bachelor's degree in the
@@ -23,6 +22,7 @@ function Main() {
           Alongside technical skills, I refined my collaboration abilities by
           navigating Git and GitHub.
           <br />
+          <div className="middle_image_container"></div>
           <br />
           After completing the course, I assumed the role of a full-stack
           developer and a teacher assistant at ASAC. Over the course of two
@@ -34,7 +34,9 @@ function Main() {
           with educational support, creating an environment of continuous
           learning and growth.
         </p>
-        <button><a href="#technologies_view">Technologies</a></button>
+        <button>
+          <a href="#technologies_view">Technologies</a>
+        </button>
       </section>
     </>
   );

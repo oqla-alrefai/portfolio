@@ -68,7 +68,7 @@
     }
 
     .sidebar_list_ a:hover .header_navbar_text {
-        opacity: 0.8;
+        opacity: 1;
         z-index: 1;
         transform: translateX(4px);
         transition: 0.5s;
