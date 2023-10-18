@@ -1,0 +1,14 @@
+.main_footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--form_inputs_color);
+    height: 6vh;
+    width: 100%;
+}
+
+.main_footer p {
+    font-size: 1em;
+    text-align: center;
+    color: var(--background_color_one);
+}

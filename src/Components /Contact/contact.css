@@ -157,7 +157,6 @@
 
     .contact_content form {
         grid-template-columns: 50% 50%;
-
     }
 }
 
@@ -167,7 +166,7 @@
     }
 
     .contact_content form {
-        grid-template-columns: 70%;
+        grid-template-columns: 90%;
         grid-template-rows: 2.6em 2.6em 2.6em 2.6em 5em 2.6em;
     }
 
