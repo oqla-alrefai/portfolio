@@ -27,6 +27,7 @@ function Header() {
     {
       category: "Contact_Me",
       icon: <i className="ri-phone-line"></i>,
+      destination: "contact_view",
     },
   ];
 

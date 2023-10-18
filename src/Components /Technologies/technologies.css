@@ -10,9 +10,21 @@
 }
 
 .technologies_view_container h2 {
+    position: relative;
     color: var(--background_color_one);
     font-size: 2.3em;
     margin: 0.8em;
+    padding: 0.3em;
+}
+
+.technologies_view_container h2::before {
+    content: '';
+    width: 45px;
+    border: 3px solid var(--background_color_one);
+    position: absolute;
+    bottom: -5px;
+    left: 1.9em;
+    border-radius: 50%;
 }
 
 .technologies_view_container .technologies_content {
@@ -36,6 +48,7 @@
 
 .technologies_content h3 {
     opacity: 0.9;
+    font-size: 1.3em;
 }
 
 .images_category {
@@ -57,7 +70,7 @@
     width: 100px;
     height: 100px;
     transition: 0.5s;
-    animation: float 3.5s linear infinite;
+    animation: float 3s linear infinite;
     cursor: pointer;
 }
 
