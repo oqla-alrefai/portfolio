@@ -5,8 +5,8 @@ function Footer() {
     <>
       <footer className="main_footer">
         <p>
-          Copy Right <i class="ri-copyright-line"></i> 2023 Khaled Tahat. All
-          Rights reserved
+          Copy Right <i className="ri-copyright-line"></i> 2023 Khaled Tahat.
+          All Rights reserved
         </p>
       </footer>
     </>

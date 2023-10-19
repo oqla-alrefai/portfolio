@@ -1,6 +1,5 @@
 import "./home.css";
-import main_photo from "../../assets/home_photo.jpg";
-import Header from "./Header/Header.jsx";
+import main_photo from "../../assets/homeImages/home_photo.jpg";
 import Main from "./MainContent/Main.jsx";
 import Footer from "./Footer/Footer";
 
@@ -14,7 +13,7 @@ function Home() {
           className="left_side_image"
         />
         <section className="home_content">
-          <Header />
+        <span className="header_logo">MY_PORTFOLIO</span>
           <Main />
           <Footer />
         </section>

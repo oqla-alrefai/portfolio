@@ -1,0 +1,35 @@
+.menu_list_container {
+    position: fixed;
+    top: 3em;
+    right: 3em;
+}
+
+.small_screens_list {
+    display: inline;
+    width: 30px;
+    height: 30px;
+    font-size: 1.3em;
+    color: var(--background_color_one);
+    background-color: var(--headings_colors);
+    border: none;
+    border-radius: 7px;
+    transition: 0.5s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.small_screens_list:hover {
+    color: var(--background_color_one);
+    border: 1px solid var(--background_color_one);
+    background-color: var(--background_color_two);
+}
+
+.menu_items_clicked_true {
+    transform: translateY(2px);
+    color: var(--background_color_one);
+    border: 1px solid var(--background_color_one);
+    background-color: var(--background_color_two);
+}

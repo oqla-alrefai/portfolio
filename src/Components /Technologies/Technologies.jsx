@@ -1,19 +1,19 @@
 import "./technologies.css";
-import HTML5 from "../../assets/HTML5-rb.png";
-import CSS3 from "../../assets/CCS3-rb.png";
-import Javascript from "../../assets/javascript-Y-rb.png";
-import REACT from "../../assets/REACT-rb.png";
-import redux from "../../assets/redux-rb.png";
-import materialUI from "../../assets/materialUI-rb.png";
-import bootstrap from "../../assets/bootstrap-rb.png";
+import HTML5 from "../../assets/technologiesImages/HTML5-rb.png";
+import CSS3 from "../../assets/technologiesImages/CCS3-rb.png";
+import Javascript from "../../assets/technologiesImages/javascript-Y-rb.png";
+import REACT from "../../assets/technologiesImages/REACT-rb.png";
+import redux from "../../assets/technologiesImages/redux-rb.png";
+import materialUI from "../../assets/technologiesImages/materialUI-rb.png";
+import bootstrap from "../../assets/technologiesImages/bootstrap-rb.png";
 
-import NodeJS from "../../assets/NodeJS-rb.png";
-import sql_database from "../../assets/sql_database-rb.png";
-import mongo_logo from "../../assets/mongo_logo-rb.png";
+import NodeJS from "../../assets/technologiesImages/NodeJS-rb.png";
+import sql_database from "../../assets/technologiesImages/sql_database-rb.png";
+import mongo_logo from "../../assets/technologiesImages/mongo_logo-rb.png";
 
-import github from "../../assets/github-rb.png";
-import git from "../../assets/git-rb.png";
-import jira from "../../assets/jira-rb.png";
+import github from "../../assets/technologiesImages/github-rb.png";
+import git from "../../assets/technologiesImages/git-rb.png";
+import jira from "../../assets/technologiesImages/jira-rb.png";
 
 function AboutUs() {
   let technologies = [
@@ -101,12 +101,10 @@ function AboutUs() {
                 <div className="images_category">
                   {element.images.map((ele) => {
                     return (
-                      <>
-                        <div className="image_box">
+                        <div className="image_box" key={ele.name}>
                           <span>{ele.name}</span>
                           <img src={ele.image} alt={ele.name} />
                         </div>
-                      </>
                     );
                   })}
                 </div>

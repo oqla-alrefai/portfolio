@@ -91,7 +91,7 @@
         width: 100%;
         height: 40vh;
         margin: 1em 0 1em 0;
-        background-image: url('../../../assets/long_photo.jpg');
+        background-image: url('../../../assets/homeImages/long_photo.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -124,7 +124,7 @@
     }
 
     .home_text_area .middle_image_container {
-        background-image: url('../../../assets/small_image.jpg');
+        background-image: url('../../../assets/homeImages/small_image.jpg');
     }
 }
 

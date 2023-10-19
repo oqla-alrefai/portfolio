@@ -1,4 +1,4 @@
-@media (max-width: 1000px) {
+
     .sidebar_list_ {
         position: absolute;
         list-style: none;
@@ -69,9 +69,10 @@
 
     .sidebar_list_ a:hover .header_navbar_text {
         opacity: 1;
-        z-index: 1;
+        z-index: 100;
         transform: translateX(4px);
         transition: 0.5s;
+        padding-right: 0.6em;
     }
 
     .sidebar_list_ .header_navbar_text::after {
@@ -81,7 +82,7 @@
         position: absolute;
         background-color: var(--headings_colors);
         right: -3px;
-        top: 27%;
+        top: 30%;
         transform: rotate(45deg);
     }
 
@@ -95,4 +96,3 @@
     .sidebar_list_ a:hover .header_navbar_icons {
         color: var(--headings_colors);
     }
-}
