@@ -30,13 +30,13 @@ function services() {
       serviceName: "Performance Optimization",
       servicePitch:
         "I'll optimize your website for speed, ensuring that your visitors don't experience delays and can access information quickly.",
-      serviceIcon: searchEngineOptimization,
+      serviceIcon: performance_optimization,
     },
     {
       serviceName: "Search Engine Optimization (SEO)",
       servicePitch:
         "By implementing SEO best practices, I'll help your website rank higher on search engines, making it easier for potential customers to find you.",
-      serviceIcon: performance_optimization,
+      serviceIcon: searchEngineOptimization,
     },
     {
       serviceName: "Training and Support",

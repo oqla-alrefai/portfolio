@@ -19,6 +19,7 @@ function ListMenu() {
     {
       category: "Services",
       icon: <i className="ri-customer-service-2-line"></i>,
+      destination: "services_view",
     },
     {
       category: "Work",
