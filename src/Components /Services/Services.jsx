@@ -50,7 +50,10 @@ function services() {
     <>
       <section className="services_view_container" id="services_view">
         <h2>My Services</h2>
-        <p className="services_heading_paragraph">I craft visually stunning and user-friendly websites that elevate your brand, ensuring a seamless online experience for your audience.</p>
+        <p className="services_heading_paragraph">
+          I craft visually stunning and user-friendly websites that elevate your
+          brand, ensuring a seamless online experience for your audience.
+        </p>
         <div className="servicers_boxes">
           {services.map((element) => {
             return (
