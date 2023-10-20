@@ -118,6 +118,13 @@
     transition: 1s;
 }
 
+@media (max-height: 620px) {
+    .technologies_view_container .technologies_content img {
+        width: 60%;
+        height: 60%;
+    }
+}
+
 @media (max-width: 545px) {
     .technologies_view_container h2 {
         font-size: 2em;

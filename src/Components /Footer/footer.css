@@ -12,3 +12,11 @@
     text-align: center;
     color: var(--background_color_one);
 }
+
+@media (max-width: 480px) {
+    @media (max-height: 480px) {
+        .main_footer {
+            display: none;
+        }
+    }
+}

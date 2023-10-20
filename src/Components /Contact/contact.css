@@ -127,6 +127,31 @@
     border: 2px solid var(--headings_colors);
 }
 
+
+@media (max-height: 610px) {
+    .contact_view_container {
+        height: 120vh;
+    }
+}
+
+@media (max-height: 510px) {
+    .contact_view_container {
+        height: 140vh;
+    }
+}
+
+@media (max-height: 435px) {
+    .contact_view_container {
+        height: 160vh;
+    }
+}
+
+@media (max-height: 380px) {
+    .contact_view_container {
+        height: 180vh;
+    }
+}
+
 @media (max-width: 1015px) {
 
     .contact_content form {
@@ -171,6 +196,36 @@
 
     .contact_content .button_container {
         grid-column: span 1;
+    }
+
+    @media (max-height: 680px) {
+        .contact_view_container {
+            height: 110vh;
+        }
+    }
+
+    @media (max-height: 615px) {
+        .contact_view_container {
+            height: 130vh;
+        }
+    }
+
+    @media (max-height: 520px) {
+        .contact_view_container {
+            height: 150vh;
+        }
+    }
+
+    @media (max-height: 450px) {
+        .contact_view_container {
+            height: 170vh;
+        }
+    }
+
+    @media (max-height: 390px) {
+        .contact_view_container {
+            height: 190vh;
+        }
     }
 }
 

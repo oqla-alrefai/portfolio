@@ -7,13 +7,11 @@ function Home() {
   return (
     <>
       <section className="home_view_container" id="home_view">
-        <img
-          src={main_photo}
-          alt="my personal image"
-          className="left_side_image"
-        />
+        <div className="left_side_image">
+          {/* <img src={main_photo} alt="my personal image" /> */}
+        </div>
         <section className="home_content">
-        <span className="header_logo">MY_PORTFOLIO</span>
+          <span className="header_logo">MY_PORTFOLIO</span>
           <Main />
           <Footer />
         </section>
