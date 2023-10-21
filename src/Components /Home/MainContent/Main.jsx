@@ -16,9 +16,9 @@ function Main() {
           <span>Hello, </span>I'm
         </span>
         <h1>Khaled Zayed Tahat</h1>
-        <span className="job_title">I'm a Front End Web Developer </span>
+        <span className="job_title">I'm a Full-Stack Web Developer </span>
         <p>
-          I am a dedicated front-end web developer with a solid foundation in
+          I am a dedicated full-stack web developer with a solid foundation in
           biomedical informatics engineering, holding a bachelor's degree in the
           field. Following my graduation, I undertook a transformative journey
           by enrolling in an intensive six-month web development course at the
@@ -44,7 +44,7 @@ function Main() {
         </p>
         <button>
           <a href="#services_view" onClick={handleBrowse}>
-            Technologies
+            Services
           </a>
         </button>
       </section>

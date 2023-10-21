@@ -2,12 +2,13 @@
     position: fixed;
     top: 3em;
     right: 3em;
+    z-index: 1;
 }
 
 .small_screens_list {
     display: inline;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     font-size: 1.3em;
     color: var(--background_color_one);
     background-color: var(--headings_colors);
@@ -32,4 +33,16 @@
     color: var(--background_color_one);
     border: 1px solid var(--background_color_one);
     background-color: var(--background_color_two);
+}
+
+@media (max-width: 480px) {
+    .menu_list_container {
+        top: 2em;
+        right: 2em;
+    }
+
+    .small_screens_list {
+        width: 30px;
+        height: 30px;
+    }
 }

@@ -54,7 +54,7 @@
 .images_category {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-items: center;
     flex-direction: row;
     column-gap: 2em;

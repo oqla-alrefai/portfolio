@@ -37,7 +37,6 @@
 }
 
 .servicers_boxes {
-    position: relative;
     display: grid;
     grid-template-columns: 30% 30% 30%;
     grid-template-rows: 20em 20em;
@@ -45,7 +44,6 @@
     justify-content: center;
     width: fit-content;
     height: fit-content;
-
 }
 
 .one_service_box {
@@ -61,6 +59,7 @@
 }
 
 .one_service_box:hover {
+    position:unset;
     background-color: rgb(202, 202, 202);
     scale: 1.02;
 }

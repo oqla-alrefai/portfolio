@@ -43,8 +43,7 @@ function ListMenu() {
       setTimeout(() => {
         plastic_click_sound.play();
       }, 100 * idx);
-
-    })
+    });
   }
 
   return (

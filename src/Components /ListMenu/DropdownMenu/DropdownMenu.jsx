@@ -9,7 +9,7 @@ function DropdownMenu(props) {
     });
 
     sound.play();
-  }
+  };
 
   return (
     <>
