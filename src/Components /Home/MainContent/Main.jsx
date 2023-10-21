@@ -1,6 +1,14 @@
 import "./main.css";
+import { Howl } from "howler";
+import cool from "../../../assets/sounds/cool.wav";
 
 function Main() {
+  let handleBrowse = () => {
+    let sound = new Howl({
+      src: [cool],
+    });
+    sound.play();
+  };
   return (
     <>
       <section className="home_text_area">
@@ -35,7 +43,9 @@ function Main() {
           learning and growth.
         </p>
         <button>
-          <a href="#technologies_view">Technologies</a>
+          <a href="#services_view" onClick={handleBrowse}>
+            Technologies
+          </a>
         </button>
       </section>
     </>

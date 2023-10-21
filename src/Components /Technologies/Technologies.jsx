@@ -94,17 +94,20 @@ function AboutUs() {
       <section className="technologies_view_container" id="technologies_view">
         <h2>Technologies</h2>
         <div className="technologies_content">
-          {technologies.map((element) => {
+          {technologies.map((element, idx) => {
             return (
-              <div className={`${element.className} all_images_categories`}>
+              <div
+                className={`${element.className} all_images_categories`}
+                key={idx}
+              >
                 <h3>{element.category}</h3>
                 <div className="images_category">
-                  {element.images.map((ele) => {
+                  {element.images.map((ele, index) => {
                     return (
-                        <div className="image_box" key={ele.name}>
-                          <span>{ele.name}</span>
-                          <img src={ele.image} alt={ele.name} />
-                        </div>
+                      <div className="image_box" key={index}>
+                        <span>{ele.name}</span>
+                        <img src={ele.image} alt={ele.name} />
+                      </div>
                     );
                   })}
                 </div>

@@ -55,9 +55,9 @@ function services() {
           brand, ensuring a seamless online experience for your audience.
         </p>
         <div className="servicers_boxes">
-          {services.map((element) => {
+          {services.map((element, idx) => {
             return (
-              <div className="one_service_box">
+              <div className="one_service_box" key={idx}>
                 <img src={element.serviceIcon} alt={element.serviceName} />
                 <h4>{element.serviceName}</h4>
                 <p>{element.servicePitch}</p>
