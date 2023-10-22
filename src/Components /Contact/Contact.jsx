@@ -3,6 +3,7 @@ import "./contact.css";
 import { Howl } from "howler";
 import Swal from "sweetalert2";
 import mail_sent from "../../assets/sounds/mail_sent.wav";
+import mail_error from "../../assets/sounds/error.wav";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -12,7 +13,10 @@ function Contact() {
     mobile_no: "",
     message: "",
   });
-  const [server, setServer] = useState("http://localhost:3001/send-email");
+  const [server, setServer] = useState(
+    "https://email-sender-6l3o.onrender.com/send-email"
+  );
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -24,9 +28,9 @@ function Contact() {
 
   async function handleSubmit(event) {
     event.preventDefault();
-    console.log(formData);
 
     try {
+      setIsLoading(true);
       const response = await fetch(server, {
         method: "POST",
         headers: {
@@ -38,22 +42,22 @@ function Contact() {
       if (response.ok) {
         Swal.fire(
           "Email Sent!",
-          "Your Email has been Sent Successfully.",
+          "Your Message has been Sent Successfully.",
           "success"
         );
         let success_mail_sent_sound = new Howl({
           src: [mail_sent],
         });
         success_mail_sent_sound.play();
-      } else {
-        Swal.fire(
-          "An Error Occurred!",
-          "Your Email was not sent.",
-          "error"
-        );
       }
     } catch (error) {
-      console.error("Error:", error);
+      Swal.fire("An Error Occurred!", "Your Message was not sent.", "error");
+      let error_mail_sent_sound = new Howl({
+        src: [mail_error],
+      });
+      error_mail_sent_sound.play();
+    } finally {
+      setIsLoading(false);
     }
   }
 
@@ -111,7 +115,9 @@ function Contact() {
               required
             />
             <div className="button_container">
-              <button type="submit">SEND</button>
+              <button type="submit">
+                {isLoading ? <div className="form_loader"></div> : "SEND"}
+              </button>
             </div>
           </form>
         </div>

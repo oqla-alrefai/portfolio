@@ -118,6 +118,9 @@
     transition: 0.5s;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
     border: 2px solid var(--headings_colors);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact_content .button_container button:hover {
@@ -127,6 +130,25 @@
     border: 2px solid var(--headings_colors);
 }
 
+form .form_loader {
+    width: 20px;
+    height: 20px;
+    border: 3px solid black;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 50%;
+    animation: spin 1.4s linear infinite;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
 
 @media (max-height: 610px) {
     .contact_view_container {
