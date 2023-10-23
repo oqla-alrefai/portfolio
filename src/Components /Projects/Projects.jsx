@@ -15,7 +15,7 @@ function Projects() {
     },
     {
       project_name: "Comics",
-        project_image: comics,
+      project_image: comics,
       description:
         "Within this project, we developed a full-stack React application with CRUD functionality. The app integrates with two deferent APIs to fetch data related to movies, comics, and cartoon characters. Users can log in to their accounts where they have the ability to add, delete, or update any movie, comic or character.",
       github_link: "https://github.com/6Pixels/comic-front-end",
@@ -23,7 +23,7 @@ function Projects() {
     },
     {
       project_name: "React Animation",
-        project_image: react_animation,
+      project_image: react_animation,
       description:
         "A collection of stylish and customizable CSS3 animations and React components to enhance the visual appeal of your web applications. Whether you're building a dynamic website or a sleek web app.",
       github_link: "https://github.com/KZTahat/react_animation",
@@ -31,13 +31,14 @@ function Projects() {
     },
     {
       project_name: "Art House",
-        project_image: art_house,
+      project_image: art_house,
       description:
         "We built this website with a mission to support art freelancers who may not have a physical space to exhibit their work. Essentially functioning as an E-commerce platform, our site offers these talented individuals a dedicated space to showcase and sell their unique collections and connect with potential buyers.",
       github_link: "https://github.com/merge-confilicts/art-house",
       live_url: "https://merge-confilicts.github.io/art-house/",
     },
   ];
+
   return (
     <>
       <section className="projects_view_container" id="projects_view">

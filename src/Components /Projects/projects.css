@@ -210,6 +210,42 @@
     color: var(--background_color_two);
 }
 
+@media (max-height: 605px) {
+    .projects_view_container {
+        height: 160vh;
+    }
+}
+
+@media (max-height: 525px) {
+    .projects_view_container {
+        height: 180vh;
+    }
+}
+
+@media (max-height: 470px) {
+    .projects_view_container {
+        height: 200vh;
+    }
+}
+
+@media (max-height: 420px) {
+    .projects_view_container {
+        height: 220vh;
+    }
+}
+
+@media (max-height: 380px) {
+    .projects_view_container {
+        height: 240vh;
+    }
+}
+
+@media (max-height: 350px) {
+    .projects_view_container {
+        height: 260vh;
+    }
+}
+
 @media (max-width: 1061px) {
     .projects_boxes {
         grid-template-columns: 49% 49%;
@@ -230,6 +266,42 @@
         grid-template-columns: 60%;
         grid-template-rows: 20em 20em 20em 20em;
         gap: 1em;
+    }
+
+    @media (max-height: 710px) {
+        .projects_view_container {
+            height: 220vh;
+        }
+    }
+
+    @media (max-height: 770px) {
+        .projects_view_container {
+            height: 240vh;
+        }
+    }
+
+    @media (max-height: 625px) {
+        .projects_view_container {
+            height: 260vh;
+        }
+    }
+
+    @media (max-height: 575px) {
+        .projects_view_container {
+            height: 280vh;
+        }
+    }
+
+    @media (max-height: 530px) {
+        .projects_view_container {
+            height: 310vh;
+        }
+    }
+
+    @media (max-height: 480px) {
+        .projects_view_container {
+            height: 330vh;
+        }
     }
 }
 
@@ -283,13 +355,13 @@
     }
 
     .projects_boxes .one_project_box:hover img {
-        transform: translateX(-100%);
+        transform: translateX(-90%);
         filter: blur(2px);
     }
 
     .one_project_box .project_text_content {
-        transform: translateX(0%) !important;
-        width: 100%;
+        transform: translateX(10%) !important;
+        width:90%;
     }
 
     .projects_boxes .one_project_box h4 {
@@ -307,5 +379,29 @@
     .one_project_box .project_links a {
         font-size: 1.3em;
         padding: 6px;
+    }
+
+    @media (max-height: 720px) {
+        .projects_view_container {
+            height: 270vh;
+        }
+    }
+
+    @media (max-height: 670px) {
+        .projects_view_container {
+            height: 300vh;
+        }
+    }
+
+    @media (max-height: 595px) {
+        .projects_view_container {
+            height: 330vh;
+        }
+    }
+
+    @media (max-height: 545px) {
+        .projects_view_container {
+            height: 360vh;
+        }
     }
 }
