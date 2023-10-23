@@ -57,7 +57,7 @@ function Projects() {
                   <p>{element.description}</p>
                   <div className="project_links">
                     {element.github_link ? (
-                      <a href={element.github_link}>
+                      <a href={element.github_link} target="_blank">
                         <span>Repo Link</span>
                         <i class="ri-github-fill"></i>
                       </a>
@@ -65,7 +65,7 @@ function Projects() {
                       <></>
                     )}
                     {element.live_url ? (
-                      <a href={element.live_url}>
+                      <a href={element.live_url} target="_blank">
                         <span>Live URL</span>
                         <i class="ri-links-line"></i>
                       </a>

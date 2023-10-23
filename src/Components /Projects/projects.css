@@ -352,11 +352,12 @@
 
     .projects_boxes .one_project_box img {
         width: 100%;
+        filter: blur(0);
     }
 
     .projects_boxes .one_project_box:hover img {
         transform: translateX(-90%);
-        filter: blur(2px);
+        filter: blur(0px) !important;
     }
 
     .one_project_box .project_text_content {
@@ -374,6 +375,7 @@
         letter-spacing: 0.03em;
         line-height: 1.2em;
         opacity: 1;
+        transition: 1s;
     }
 
     .one_project_box .project_links a {

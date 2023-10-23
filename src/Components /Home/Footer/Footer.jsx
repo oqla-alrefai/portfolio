@@ -4,7 +4,7 @@ function Footer() {
   return (
     <>
       <footer className="home_footer">
-        <a href="#">
+        <a href="https://www.facebook.com/khaled.tahat.31">
           <i className="ri-facebook-line" target="_blank"></i>
         </a>
         <a
