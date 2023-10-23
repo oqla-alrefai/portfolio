@@ -17,7 +17,7 @@ function Projects() {
       project_name: "Comics",
         project_image: comics,
       description:
-        "Within this project, we developed a full-stack React application with CRUD functionality. The app integrates with two deferent APIs to fetch data related to movies, comics, and cartoon characters. Users can log in to their accounts where they have the ability to add, delete, or update any movie, comic, or character.",
+        "Within this project, we developed a full-stack React application with CRUD functionality. The app integrates with two deferent APIs to fetch data related to movies, comics, and cartoon characters. Users can log in to their accounts where they have the ability to add, delete, or update any movie, comic or character.",
       github_link: "https://github.com/6Pixels/comic-front-end",
       live_url: "https://comic-pixels.netlify.app/",
     },

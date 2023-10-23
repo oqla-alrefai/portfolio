@@ -1,6 +1,6 @@
 .projects_view_container {
     width: 100%;
-    height: 150vh;
+    height: 140vh;
     padding: 2em;
     display: flex;
     justify-content: center;
@@ -8,7 +8,7 @@
     flex-direction: column;
     background-color: #dfdfdf;
 
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 .projects_view_container h2 {
@@ -73,7 +73,7 @@
 
 .projects_boxes .one_project_box img {
     width: 50%;
-    height: 20em;
+    height: 100%;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -126,12 +126,14 @@
 
 .projects_boxes .one_project_box p {
     text-align: start;
-    font-size: 1.1em;
+    font-size: 0.9em;
     font-weight: 100;
+    letter-spacing: 0.02em;
     font-style: normal;
     line-height: 1.15em;
     opacity: 0.8;
     transition: 1s;
+    height: 65%;
 }
 
 .projects_boxes .one_project_box:hover p {
@@ -145,7 +147,7 @@
     text-align: center;
     width: 100%;
     height: 100%;
-    font-size: 1.5em;
+    font-size: 1.3em;
     padding: 3px;
     border-radius: 4px;
     color: var(--background_color_two);
@@ -209,4 +211,86 @@
 
 .one_project_box .project_links a:hover i {
     color: var(--background_color_two);
+}
+
+@media (max-width: 1061px) {
+    .projects_boxes {
+        grid-template-columns: 49% 49%;
+        gap: 1em;
+    }
+}
+
+@media (max-width: 880px) {
+    .projects_view_container {
+        height: 210vh;
+    }
+
+    .projects_view_container .projects_heading_paragraph {
+        width: 80%;
+    }
+
+    .projects_boxes {
+        grid-template-columns: 60%;
+        grid-template-rows: 20em 20em 20em 20em;
+        gap: 1em;
+    }
+}
+
+@media (max-width: 730px) {
+    .projects_view_container {
+        height: 220vh;
+    }
+
+    .projects_view_container .projects_heading_paragraph {
+        font-size: 1.2em;
+        width: 80%;
+    }
+
+    .projects_boxes {
+        grid-template-columns: 80%;
+        grid-template-rows: 20em 20em 20em 20em;
+        gap: 1em;
+    }
+}
+
+@media (max-width: 561px) {
+    .projects_view_container .projects_heading_paragraph {
+        font-size: 1.1em;
+        width: 90%;
+    }
+
+    .projects_boxes {
+        grid-template-columns: 100%;
+        grid-template-rows: 20em 20em 20em 20em;
+        gap: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects_view_container .projects_heading_paragraph {
+        font-size: 1em;
+        width: 100%;
+    }
+
+    .projects_boxes {
+        grid-template-rows: 18em 18em 18em 18em;
+        gap: 0.8em;
+    }
+
+    .projects_boxes .one_project_box h4 {
+        font-size: 1.2em;
+    }
+
+    .projects_boxes .one_project_box p {
+        font-size: 0.8em;
+        font-weight: 100;
+        letter-spacing: 0.03em;
+        line-height: 1.05em;
+        opacity: 1;
+    }
+
+    .one_project_box .project_links a {
+        font-size: 1em;
+        padding: 3px;
+    }
 }
