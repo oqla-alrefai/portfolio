@@ -3,9 +3,10 @@ import {
   Home,
   ListMenu,
   Technologies,
+  Services,
+  Projects,
   Contact,
   Footer,
-  Services,
 } from "./Components ";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <ListMenu />
       <Technologies />
       <Services />
+      <Projects />
       <Contact />
       <Footer />
     </section>

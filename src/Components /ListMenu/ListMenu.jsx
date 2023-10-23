@@ -24,8 +24,9 @@ function ListMenu() {
       destination: "services_view",
     },
     {
-      category: "Work",
-      icon: <i className="ri-suitcase-line"></i>,
+      category: "My_Projects",
+      icon: <i class="ri-pages-line"></i>,
+      destination: "projects_view",
     },
     {
       category: "Contact_Me",

@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: var(--background_color_one);
+    background-color: #dfdfdf;
 }
 
 .technologies_view_container h2 {
@@ -54,7 +54,7 @@
 .images_category {
     display: flex;
     justify-content: space-around;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     align-items: center;
     flex-direction: row;
     column-gap: 2em;

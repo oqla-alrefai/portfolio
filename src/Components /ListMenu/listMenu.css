@@ -2,7 +2,7 @@
     position: fixed;
     top: 3em;
     right: 3em;
-    z-index: 1;
+    z-index: 2;
 }
 
 .small_screens_list {

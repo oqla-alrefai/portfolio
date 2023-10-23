@@ -1,0 +1,212 @@
+.projects_view_container {
+    width: 100%;
+    height: 150vh;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #dfdfdf;
+
+    /* border: 1px solid red; */
+}
+
+.projects_view_container h2 {
+    position: relative;
+    color: var(--headings_colors);
+    font-size: 2.3em;
+    margin: 0 0 0.8em 0;
+    padding: 0.3em;
+}
+
+.projects_view_container h2::before {
+    content: '';
+    width: 45px;
+    border: 3px solid var(--headings_colors);
+    position: absolute;
+    bottom: -5px;
+    left: 1.8em;
+    border-radius: 50%;
+}
+
+.projects_view_container .projects_heading_paragraph {
+    font-size: 1.2em;
+    color: var(--background_color_two);
+    height: 3em;
+    text-align: center;
+    margin-bottom: 1em;
+    width: 60%;
+}
+
+.projects_boxes {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 20em 20em;
+    gap: 1.5em;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+
+    /* border: 1px solid orange; */
+}
+
+.projects_boxes .one_project_box {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-content: center;
+    flex-direction: row;
+    padding: 1em;
+    border-radius: 7px;
+    overflow: hidden;
+    background-color: var(--background_color_one);
+    cursor: pointer;
+    transition: 1s;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
+
+    /* border: 1px solid blue; */
+}
+
+.projects_boxes .one_project_box:hover {
+    background-color: #2e2e2e;
+}
+
+.projects_boxes .one_project_box img {
+    width: 50%;
+    height: 20em;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: 1s;
+    z-index: 1;
+    border-radius: 7px;
+    filter: blur(0.5px);
+}
+
+.projects_boxes .one_project_box:hover img {
+    transform: translateX(-100%);
+    filter: blur(2px);
+}
+
+.project_text_content {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: column;
+    transition: 1s;
+    width: 50%;
+    height: 100%;
+    padding: 0 5px 0 0;
+    filter: blur(3px);
+}
+
+.project_text_content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--headings_colors);
+    filter: blur(5px);
+}
+
+.projects_boxes .one_project_box:hover:hover .project_text_content {
+    transform: translateX(107%);
+    filter: blur(0);
+}
+
+.projects_boxes .one_project_box h4 {
+    color: var(--headings_colors);
+    font-size: 1.5em;
+    padding: 0.3em;
+    margin: 0 0 0.5em 0;
+}
+
+.projects_boxes .one_project_box p {
+    text-align: start;
+    font-size: 1.1em;
+    font-weight: 100;
+    font-style: normal;
+    line-height: 1.15em;
+    opacity: 0.8;
+    transition: 1s;
+}
+
+.projects_boxes .one_project_box:hover p {
+    opacity: 1;
+    color: var(--background_color_one);
+}
+
+.one_project_box .project_links a {
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5em;
+    padding: 3px;
+    border-radius: 4px;
+    color: var(--background_color_two);
+    background-color: var(--headings_colors);
+    opacity: 0;
+    transition: 1.2s;
+    z-index: -1;
+}
+
+.one_project_box .project_links a:first-child {
+    margin-right: 0.4em;
+}
+
+.one_project_box:hover .project_links a {
+    opacity: 1;
+    z-index: auto;
+}
+
+.one_project_box .project_links a:hover {
+    background-color: var(--background_color_one);
+}
+
+.one_project_box .project_links a span {
+    position: absolute;
+    top: -2.3em;
+    left: -1.3em;
+    background-color: var(--headings_colors);
+    color: var(--background_color_one);
+    font-size: 0.5em;
+    width: 55px;
+    padding: 3px;
+    border-radius: 4px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.one_project_box .project_links a span::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    background-color: var(--headings_colors);
+    bottom: -3px;
+    left: 50%;
+    transform: rotate(45deg);
+}
+
+.one_project_box .project_links a:hover span {
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(4px);
+}
+
+.one_project_box .project_links a i {
+    color: #dfdfdf;
+    transition: 0.8s;
+}
+
+.one_project_box .project_links a:hover i {
+    color: var(--background_color_two);
+}
