@@ -119,15 +119,27 @@
 }
 
 @media (max-height: 620px) {
-    .technologies_view_container .technologies_content img {
+    .technologies_view_container {
+        height: fit-content;
+    }
+
+    /* .technologies_view_container .technologies_content img {
         width: 60%;
         height: 60%;
-    }
+    } */
 }
 
 @media (max-width: 545px) {
+    .technologies_view_container {
+        height: fit-content;
+    }
+
     .technologies_view_container h2 {
         font-size: 2em;
+    }
+
+    .technologies_content h3 {
+        margin: 2em 0 2em 0;
     }
 
     .technologies_view_container .technologies_content {
@@ -147,7 +159,6 @@
 @media (max-width: 380px) {
     .technologies_view_container {
         padding: 0.3em;
-        height: 110vh;
     }
 
     .technologies_view_container h2 {
