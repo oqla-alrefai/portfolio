@@ -160,41 +160,23 @@ form .form_loader {
 }
 
 @keyframes spin {
-    0%{
+    0% {
         transform: rotate(0deg);
     }
 
-    100%{
+    100% {
         transform: rotate(360deg);
     }
 }
 
-@media (max-height: 610px) {
-    .contact_view_container {
-        height: 120vh;
-    }
-}
 
-@media (max-height: 510px) {
+@media (max-height: 580px) {
     .contact_view_container {
-        height: 140vh;
-    }
-}
-
-@media (max-height: 435px) {
-    .contact_view_container {
-        height: 160vh;
-    }
-}
-
-@media (max-height: 380px) {
-    .contact_view_container {
-        height: 180vh;
+        height: fit-content;
     }
 }
 
 @media (max-width: 1015px) {
-
     .contact_content form {
         width: 100%;
     }
@@ -222,6 +204,10 @@ form .form_loader {
 }
 
 @media (max-width: 505px) {
+    .contact_view_container {
+        height: fit-content;
+    }
+
     .contact_content p {
         font-size: 1em;
     }
@@ -237,36 +223,6 @@ form .form_loader {
 
     .contact_content .button_container {
         grid-column: span 1;
-    }
-
-    @media (max-height: 680px) {
-        .contact_view_container {
-            height: 110vh;
-        }
-    }
-
-    @media (max-height: 615px) {
-        .contact_view_container {
-            height: 130vh;
-        }
-    }
-
-    @media (max-height: 520px) {
-        .contact_view_container {
-            height: 150vh;
-        }
-    }
-
-    @media (max-height: 450px) {
-        .contact_view_container {
-            height: 170vh;
-        }
-    }
-
-    @media (max-height: 390px) {
-        .contact_view_container {
-            height: 190vh;
-        }
     }
 }
 
