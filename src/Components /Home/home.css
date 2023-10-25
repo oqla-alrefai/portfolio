@@ -1,7 +1,7 @@
 .home_view_container {
     display: flex;
     justify-content: start;
-    align-items: center;
+    align-items: stretch;
     flex-direction: row;
     height: 100vh;
     width: 100%;
@@ -13,16 +13,18 @@
     justify-content: start;
     align-items: center;
     width: 33%;
-    height: 100%;
+    min-height: 100%;
     transition: 0.5s;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
-    height: 100vh;
+    background-image: url(../../assets/homeImages/home_photo.jpg);
+    background-size: cover;
+    background-position: start;
 }
 
 .home_view_container .left_side_image img {
     width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
 }
 
 .home_view_container .home_content {
@@ -43,12 +45,8 @@
     background-color: var(--background_color_two);
 }
 
-@media (max-height: 610px) {
+@media (max-height: 555px) {
     .home_view_container {
-        height: fit-content;
-    }
-
-    .left_side_image {
         height: fit-content;
     }
 }
