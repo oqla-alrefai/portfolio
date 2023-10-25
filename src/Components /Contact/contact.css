@@ -185,7 +185,6 @@ form .form_loader {
 @media (max-width: 790px) {
     .contact_content form {
         grid-template-columns: 50% 50%;
-
     }
 }
 
@@ -208,13 +207,19 @@ form .form_loader {
         height: fit-content;
     }
 
+    .contact_content h2 {
+        margin-top: 2em;
+    }
+
     .contact_content p {
-        font-size: 1em;
+        font-size: 1.1em;
+        width: 100%;
     }
 
     .contact_content form {
         grid-template-columns: 90%;
         grid-template-rows: 2.6em 2.6em 2.6em 2.6em 5em 2.6em;
+        margin-bottom: 3.2em;
     }
 
     .contact_content textarea {
