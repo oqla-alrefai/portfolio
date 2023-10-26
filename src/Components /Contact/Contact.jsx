@@ -28,7 +28,7 @@ function Contact() {
 
   async function handleSubmit(event) {
     event.preventDefault();
-
+    if (isLoading) return;
     try {
       setIsLoading(true);
       const response = await fetch(server, {
