@@ -75,30 +75,13 @@
     padding: 0.3em;
     margin: 0 0 0.5em 0;
     text-align: center;
+    color: var(--headings_colors);
 }
 
 .servicers_boxes .one_service_box p {
     text-align: center;
     font-size: 1.1em;
 }
-
-/* @media (max-height: 621px) {
-    .services_view_container {
-        height: 155vh;
-    }
-}
-
-@media (max-height: 541px) {
-    .services_view_container {
-        height: 175vh;
-    }
-}
-
-@media (max-height: 481px) {
-    .services_view_container {
-        height: 195vh;
-    }
-} */
 
 @media (max-width: 1051px) {
     .services_view_container {
@@ -108,11 +91,6 @@
 }
 
 @media (max-width: 923px) {
-    /* .services_view_container {
-        height: 155vh;
-
-    } */
-
     .servicers_boxes {
         grid-template-columns: 45% 45%;
         grid-template-rows: 18em 18em 18em;
@@ -143,36 +121,6 @@
     .servicers_boxes .one_service_box p {
         font-size: 0.95em;
     }
-
-    /* @media (max-height: 695px) {
-        .services_view_container {
-            height: 175vh;
-        }
-    }
-    
-    @media (max-height: 610px) {
-        .services_view_container {
-            height: 195vh;
-        }
-    }
-
-    @media (max-height: 545px) {
-        .services_view_container {
-            height: 215vh;
-        }
-    }
-
-    @media (max-height: 495px) {
-        .services_view_container {
-            height: 235vh;
-        }
-    }
-
-    @media (max-height: 450px) {
-        .services_view_container {
-            height: 255vh;
-        }
-    } */
 }
 
 @media (max-width: 548px) {
@@ -184,10 +132,6 @@
 }
 
 @media (max-width: 480px) {
-    /* .services_view_container {
-        height: 240vh;
-    } */
-
     .services_view_container .services_heading_paragraph {
         width: 100%;
     }
@@ -206,46 +150,4 @@
     .servicers_boxes .one_service_box h4 {
         font-size: 1.1em;
     }
-
-    /* @media (max-height: 702px) {
-        .services_view_container {
-            height: 265vh;
-        }
-    }
-
-    @media (max-height: 640px) {
-        .services_view_container {
-            height: 295vh;
-        }
-    }
-
-    @media (max-height: 575px) {
-        .services_view_container {
-            height: 315vh;
-        }
-    }
-
-    @media (max-height: 535px) {
-        .services_view_container {
-            height: 350vh;
-        }
-    }
-
-    @media (max-height: 480px) {
-        .services_view_container {
-            height: 380vh;
-        }
-    }
-
-    @media (max-height: 440px) {
-        .services_view_container {
-            height: 400vh;
-        }
-    }
-
-    @media (max-height: 420px) {
-        .services_view_container {
-            height: 440vh;
-        }
-    } */
 }
