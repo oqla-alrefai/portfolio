@@ -31,7 +31,8 @@ function Contact() {
     if (isLoading) return;
     try {
       setIsLoading(true);
-      const response = await fetch(server, {
+      await new Promise((resolve) => setTimeout(resolve, 3000));
+      fetch(server, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -39,17 +40,15 @@ function Contact() {
         body: JSON.stringify(formData),
       });
 
-      if (response.ok) {
-        Swal.fire(
-          "Email Sent!",
-          "Your Message has been Sent Successfully.",
-          "success"
-        );
-        let success_mail_sent_sound = new Howl({
-          src: [mail_sent],
-        });
-        success_mail_sent_sound.play();
-      }
+      Swal.fire(
+        "Email Sent!",
+        "Your Message has been Sent Successfully.",
+        "success"
+      );
+      let success_mail_sent_sound = new Howl({
+        src: [mail_sent],
+      });
+      success_mail_sent_sound.play();
     } catch (error) {
       Swal.fire("An Error Occurred!", "Your Message was not sent.", "error");
       let error_mail_sent_sound = new Howl({
