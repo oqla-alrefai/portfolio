@@ -4,13 +4,10 @@ function Footer() {
   return (
     <>
       <footer className="home_footer">
-        <a href="https://www.facebook.com/khaled.tahat.31">
-          <i className="ri-facebook-line" target="_blank"></i>
+        <a href="https://github.com/KZTahat" target="_blank">
+          <i class="ri-github-fill"></i>
         </a>
-        <a
-          href="https://www.linkedin.com/in/khaled-z-tahat-1839211b2/"
-          target="_blank"
-        >
+        <a href="https://www.linkedin.com/in/khaled-z-tahat/" target="_blank">
           <i className="ri-linkedin-line"></i>
         </a>
         <a href="https://www.instagram.com/kztahat96/?hl=en" target="_blank">
