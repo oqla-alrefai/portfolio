@@ -1,14 +1,16 @@
 import "./main.css";
 import { Howl } from "howler";
-import cool from "../../../assets/sounds/cool.wav";
+import download from "../../../assets/sounds/download.wav";
+import myResume from "../../../assets/Khaled_Tahat_24_10.pdf";
 
 function Main() {
-  let handleBrowse = () => {
+  let handleDownload = () => {
     let sound = new Howl({
-      src: [cool],
+      src: [download],
     });
     sound.play();
   };
+
   return (
     <>
       <section className="home_text_area">
@@ -42,11 +44,13 @@ function Main() {
           with educational support, creating an environment of continuous
           learning and growth.
         </p>
-        <button>
-          <a href="#projects_view" onClick={handleBrowse}>
-            My Projects
-          </a>
-        </button>
+        <a
+          href="https://public.am.files.1drv.com/y4mVCtQGxTn4-SlcDPTroI6OTa9W-UgfBET9XwLkkNNnIg1I2s86LRziaZ4R1LRklmfDwKHxXFCSKNqYUkXcoOgsygTuOp26-dM9tPFRS7kTgSsgm_CkKaQs_NWr6HiIeYGzWds4Rw5aYifyUb2_UeJ6g5g8YNezkejiEzvWnmI4Omzn2hvfLq8eA8VkN9HbpyC-Ovw90QLe9y2Odxjf2-PhIp26irsXz2WqKphKvhykW8?AVOverride=1"
+          download="Khaled Tahat"
+          onClick={handleDownload}
+        >
+          <button>Download Resume</button>
+        </a>
       </section>
     </>
   );

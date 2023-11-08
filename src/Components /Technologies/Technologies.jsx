@@ -18,74 +18,56 @@ import jira from "../../assets/technologiesImages/jira-rb.png";
 function AboutUs() {
   let technologies = [
     {
-      category: "Front-End",
-      className: "front_end_section",
-      images: [
-        {
-          name: "HTML 5",
-          image: HTML5,
-        },
-        {
-          name: "CSS 3",
-          image: CSS3,
-        },
-        {
-          name: "JavaScript",
-          image: Javascript,
-        },
-        {
-          name: "React.js",
-          image: REACT,
-        },
-        {
-          name: "redux.js",
-          image: redux,
-        },
-        {
-          name: "Material UI",
-          image: materialUI,
-        },
-        {
-          name: "bootstrap",
-          image: bootstrap,
-        },
-      ],
+      name: "HTML 5",
+      image: HTML5,
     },
     {
-      category: "Back-End",
-      className: "back_end_section",
-      images: [
-        {
-          name: "Node JS",
-          image: NodeJS,
-        },
-        {
-          name: "SQL_database",
-          image: sql_database,
-        },
-        {
-          name: "Mongo DB",
-          image: mongo_logo,
-        },
-      ],
+      name: "CSS 3",
+      image: CSS3,
     },
     {
-      category: "Project Management Tools",
-      className: "project_management_section",
-      images: [
-        {
-          name: "GitHub",
-          image: github,
-        },
-        {
-          name: "Git",
-          image: git,
-        },
-        {
-          name: "Jira",
-          image: jira,
-        },
-      ],
+      name: "JavaScript",
+      image: Javascript,
+    },
+    {
+      name: "React.js",
+      image: REACT,
+    },
+    {
+      name: "redux.js",
+      image: redux,
+    },
+    {
+      name: "Material UI",
+      image: materialUI,
+    },
+    {
+      name: "bootstrap",
+      image: bootstrap,
+    },
+    {
+      name: "Node JS",
+      image: NodeJS,
+    },
+    {
+      name: "SQL_database",
+      image: sql_database,
+    },
+    {
+      name: "Mongo DB",
+      image: mongo_logo,
+    },
+    {
+      name: "GitHub",
+      image: github,
+    },
+    {
+      name: "Git",
+      image: git,
+    },
+    {
+      name: "Jira",
+      image: jira,
     },
   ];
 
@@ -94,23 +76,11 @@ function AboutUs() {
       <section className="technologies_view_container" id="technologies_view">
         <h2>Technologies</h2>
         <div className="technologies_content">
-          {technologies.map((element, idx) => {
+          {technologies.map((ele, index) => {
             return (
-              <div
-                className={`${element.className} all_images_categories`}
-                key={idx}
-              >
-                <h3>{element.category}</h3>
-                <div className="images_category">
-                  {element.images.map((ele, index) => {
-                    return (
-                      <div className="image_box" key={index}>
-                        <span>{ele.name}</span>
-                        <img src={ele.image} alt={ele.name} />
-                      </div>
-                    );
-                  })}
-                </div> 
+              <div className="image_box" key={index}>
+                <span>{ele.name}</span>
+                <img src={ele.image} alt={ele.name} />
               </div>
             );
           })}
