@@ -1,7 +1,8 @@
 import "./main.css";
 import { Howl } from "howler";
 import download from "../../../assets/sounds/download.wav";
-import myResume from "../../../assets/Khaled_Tahat.pdf";
+import myResume from "../../../assets/resumes/khaled_Tahat_24_10.pdf";
+import myResume2 from "../../../assets/resumes/khaled_tahat_23_11.pdf";
 
 function Main() {
   let handleDownload = () => {
@@ -44,7 +45,7 @@ function Main() {
           with educational support, creating an environment of continuous
           learning and growth.
         </p>
-        <a href={myResume} download="Khaled Tahat" onClick={handleDownload}>
+        <a href={myResume2} download="Khaled Tahat" onClick={handleDownload}>
           <button>Download Resume</button>
         </a>
       </section>
