@@ -52,7 +52,11 @@ function ListMenu() {
   return (
     <>
       <section className="menu_list_container" id="list_menu">
-        <button className={`small_screens_list`} onClick={switchThemMode}>
+        <button
+          id="dark_mode_button"
+          className="small_screens_list"
+          onClick={switchThemMode}
+        >
           {darkMode ? (
             <i className="ri-sun-line"></i>
           ) : (
