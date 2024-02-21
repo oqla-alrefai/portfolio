@@ -32,6 +32,10 @@
     background-color: var(--background_color_two);
 }
 
+#dark_mode_button {
+    background-color: var(--background_color_two);
+}
+
 .menu_items_clicked_true {
     transform: translateY(2px);
     color: var(--background_color_one);
