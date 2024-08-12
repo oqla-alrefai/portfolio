@@ -39,7 +39,7 @@
 .projects_boxes {
     display: grid;
     grid-template-columns: 40% 40%;
-    grid-template-rows: 20em 20em;
+    grid-template-rows: 20em 20em 20em;
     gap: 1.5em;
     justify-content: center;
     width: fit-content;
@@ -221,7 +221,7 @@
 
     .projects_boxes {
         grid-template-columns: 60%;
-        grid-template-rows: 20em 20em 20em 20em;
+        grid-template-rows: 20em 20em 20em 20em 20em 20em;
         gap: 1em;
     }
 }
@@ -234,8 +234,6 @@
 
     .projects_boxes {
         grid-template-columns: 80%;
-        grid-template-rows: 20em 20em 20em 20em;
-        gap: 1em;
     }
 }
 
@@ -247,8 +245,6 @@
 
     .projects_boxes {
         grid-template-columns: 100%;
-        grid-template-rows: 20em 20em 20em 20em;
-        gap: 1em;
     }
 }
 
@@ -259,7 +255,7 @@
     }
 
     .projects_boxes {
-        grid-template-rows: 25em 25em 25em 25em;
+        grid-template-rows: 25em 25em 25em 25em 25em 25em;
         gap: 1em;
     }
 
