@@ -13,7 +13,18 @@ import mongo_logo from "../../assets/technologiesImages/mongo_logo-rb.png";
 
 import github from "../../assets/technologiesImages/github-rb.png";
 import git from "../../assets/technologiesImages/git-rb.png";
-import jira from "../../assets/technologiesImages/jira-rb.png";
+import socket from "../../assets/technologiesImages/socketio.png";
+import firebase from "../../assets/technologiesImages/firebase.png"
+import postman from "../../assets/technologiesImages/postman.png"
+import express from "../../assets/technologiesImages/express.png"
+import figma from "../../assets/technologiesImages/figma.png"
+import React_Query from "../../assets/technologiesImages/query.png"
+import linux from "../../assets/technologiesImages/linux.png"
+import docker from "../../assets/technologiesImages/docker.png"
+import python from "../../assets/technologiesImages/python.png"
+
+
+
 
 function AboutUs() {
   let technologies = [
@@ -66,9 +77,42 @@ function AboutUs() {
       image: git,
     },
     {
-      name: "Jira",
-      image: jira,
+      name:"socket.io",
+      image:socket
     },
+    {
+      name:"firebase",
+      image: firebase
+    },
+    {
+      name: "postman",
+      image: postman
+    },
+    {
+      name: "express",
+      image: express
+    },
+    {
+      name: "figma",
+      image: figma
+    },
+    {
+      name: "React_Query",
+      image: React_Query
+    },
+    {
+      name:"linux",
+      image:linux
+    },
+    {
+      name:"docker",
+      image:docker
+    },
+    {
+      name:"python",
+      image:python
+    }
+
   ];
 
   return (

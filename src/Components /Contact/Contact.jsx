@@ -14,7 +14,7 @@ function Contact() {
     message: "",
   });
   const [server, setServer] = useState(
-    "https://email-sender-6l3o.onrender.com/send-email"
+    "https://email-47ta.onrender.com/"
   );
   const [isLoading, setIsLoading] = useState(false);
 
@@ -71,7 +71,7 @@ function Contact() {
             contact form below.
           </p>
           <form
-            action="kztahat96@gmail.com"
+            action="realrefai.rr@gmail.com"
             method="POST"
             onSubmit={handleSubmit}
           >
